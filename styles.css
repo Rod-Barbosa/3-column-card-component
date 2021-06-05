@@ -1,0 +1,109 @@
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+    margin: 11% 18% 5% 18%;
+    font-weight: 700;
+    line-height: 1.5;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+p {
+    min-height: 210px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.wrapper {
+    margin: 15% 18.5%;
+}
+.top{
+    background-color: hsl(31, 77%, 52%);
+    width: 33%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.mid{
+    background-color: hsl(184, 100%, 22%);
+    width: 33%;
+}
+.bot{
+    background-color: hsl(179, 100%, 13%);
+    width: 33%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.learn-buttom{
+    border-radius: 25px;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: hsl(0, 0%, 95%);
+    border: 0 solid transparent;
+}
+.learn-buttom:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+.top-buttom {
+    color: hsl(31, 77%, 52%);
+}
+.mid-buttom {
+    color: hsl(184, 100%, 22%)
+}
+.bot-buttom {
+    color: hsl(179, 100%, 13%);
+}
+@media screen and (max-width: 950px) and (min-width: 600px) {
+    body {
+    margin: 11% 10% 5% 10%;
+    }
+    p {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 20% 5%;
+        font-weight: 400;
+        line-height: 1;
+    }
+    p {
+        min-height: unset;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .wrapper {
+        margin: 15% 15%;
+    }
+    .top{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+    .mid {
+        width: 100%;
+    }
+    .bot {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+        width: 100%;
+    }
+    .learn-buttom {
+        margin-top: 0px;
+        padding: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+  }
